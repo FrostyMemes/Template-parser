@@ -1,0 +1,15 @@
+D:\Projects\C Sharp Projects\SKD7_Test\SKD7_Test\bin\Debug\net7.0\SKD7_Test.exe
+D:\Projects\C Sharp Projects\SKD7_Test\SKD7_Test\bin\Debug\net7.0\SKD7_Test.deps.json
+D:\Projects\C Sharp Projects\SKD7_Test\SKD7_Test\bin\Debug\net7.0\SKD7_Test.runtimeconfig.json
+D:\Projects\C Sharp Projects\SKD7_Test\SKD7_Test\bin\Debug\net7.0\SKD7_Test.dll
+D:\Projects\C Sharp Projects\SKD7_Test\SKD7_Test\bin\Debug\net7.0\SKD7_Test.pdb
+D:\Projects\C Sharp Projects\SKD7_Test\SKD7_Test\obj\Debug\net7.0\SKD7_Test.csproj.AssemblyReference.cache
+D:\Projects\C Sharp Projects\SKD7_Test\SKD7_Test\obj\Debug\net7.0\SKD7_Test.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\C Sharp Projects\SKD7_Test\SKD7_Test\obj\Debug\net7.0\SKD7_Test.AssemblyInfoInputs.cache
+D:\Projects\C Sharp Projects\SKD7_Test\SKD7_Test\obj\Debug\net7.0\SKD7_Test.AssemblyInfo.cs
+D:\Projects\C Sharp Projects\SKD7_Test\SKD7_Test\obj\Debug\net7.0\SKD7_Test.csproj.CoreCompileInputs.cache
+D:\Projects\C Sharp Projects\SKD7_Test\SKD7_Test\obj\Debug\net7.0\SKD7_Test.dll
+D:\Projects\C Sharp Projects\SKD7_Test\SKD7_Test\obj\Debug\net7.0\refint\SKD7_Test.dll
+D:\Projects\C Sharp Projects\SKD7_Test\SKD7_Test\obj\Debug\net7.0\SKD7_Test.pdb
+D:\Projects\C Sharp Projects\SKD7_Test\SKD7_Test\obj\Debug\net7.0\SKD7_Test.genruntimeconfig.cache
+D:\Projects\C Sharp Projects\SKD7_Test\SKD7_Test\obj\Debug\net7.0\ref\SKD7_Test.dll
