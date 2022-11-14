@@ -45,7 +45,7 @@ public class SimplePatternsTest
     }
     
     [TestMethod]
-    public void TextPatternFindingWithWrongStartPosition()
+    public void TextPatternTryFindWithWrongStartPosition()
     {
         var testText = "TestText";
         var text = "Test";
