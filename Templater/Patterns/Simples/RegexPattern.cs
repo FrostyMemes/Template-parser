@@ -2,9 +2,9 @@
 
 namespace Templater.Patterns;
 
-public class Rgx: Pattern
+public class RegexPattern: Pattern
 {
-    public Rgx(Regex regexp)
+    public RegexPattern(Regex regexp)
     {
         Execute = (text, position) =>
         {
