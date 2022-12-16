@@ -6,7 +6,7 @@ namespace TemplaterTests;
 public class RegexPatternTest
 {
     [TestMethod]
-    public void RegexPatternSuccessefulFinding()
+    public void SuccessefulFinding()
     {
         var testText = "expamletTestText";
         var posititon = 0;
@@ -19,7 +19,7 @@ public class RegexPatternTest
     
     
     [TestMethod]
-    public void RegexPatternUnsuccessefulFinding()
+    public void UnsuccessefulFinding()
     {
         var testText = "WestWext";
         var posititon = 0;
@@ -32,7 +32,7 @@ public class RegexPatternTest
     
     
     [TestMethod]
-    public void RegexPatternSuccessefulCheckFindingResult()
+    public void CorrectFindingResult()
     {
         var testText = "exampleTestText";
         var posititon = 0;
@@ -45,7 +45,7 @@ public class RegexPatternTest
     
     
     [TestMethod]
-    public void RegexPatternSuccessefulCheckEndPosition()
+    public void CorrectEndPosition()
     {
         var testText = "TestTest";
         var posititon = 0;
@@ -59,7 +59,7 @@ public class RegexPatternTest
     
     
     [TestMethod]
-    public void RegexPatternTryFindWithWrongStartPosition()
+    public void TryingFindWithWrongStartPosition()
     {
         var testText = "TestTest";
         var posititon = 7;
