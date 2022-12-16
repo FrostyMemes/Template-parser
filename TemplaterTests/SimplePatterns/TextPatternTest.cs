@@ -7,7 +7,7 @@ public class TextPatternTest
 {
     
     [TestMethod]
-    public void TextPatternSuccessefulFinding()
+    public void SuccessefulFinding()
     {
         var testText = "TestText";
         var text = "Test";
@@ -20,7 +20,7 @@ public class TextPatternTest
     
     
     [TestMethod]
-    public void TextPatternUnsuccessefulFinding()
+    public void UnsuccessefulFinding()
     {
         var testText = "TestText";
         var text = "WTest";
@@ -33,7 +33,7 @@ public class TextPatternTest
     
     
     [TestMethod]
-    public void TextPatternSuccessefulCheckFindingResult()
+    public void CorrectFindingResult()
     {
         var testText = "TestText";
         var text = "Test";
@@ -41,12 +41,12 @@ public class TextPatternTest
         
         var testTextPattern = new TextPattern(text);
         var patternResult = testTextPattern.Execute(testText, posititon);
-        Assert.AreEqual("Test",patternResult.Result);
+        Assert.AreEqual(text,patternResult.Result);
     }
     
     
     [TestMethod]
-    public void TextPatternSuccessefulCheckEndPosition()
+    public void CorrectEndPosition()
     {
         var testText = "TestText";
         var text = "Test";
@@ -60,7 +60,7 @@ public class TextPatternTest
     
     
     [TestMethod]
-    public void TextPatternTryFindWithWrongStartPosition()
+    public void TryingFindWithWrongStartPosition()
     {
         var testText = "TestText";
         var text = "Test";
