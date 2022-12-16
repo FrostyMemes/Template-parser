@@ -6,10 +6,10 @@ public class TextPattern: Pattern
     {
         Execute = (text, position) =>
         {
-            if (text.Substring(position, pattern.Length) == pattern) 
-                return new PatternResult(pattern, position+pattern.Length);
-            
-            return null;
+            return (text.Substring(position, pattern.Length) == pattern)
+                ? new PatternResult(pattern, position + pattern.Length)
+                : null;
+                
         };
     }
 }
