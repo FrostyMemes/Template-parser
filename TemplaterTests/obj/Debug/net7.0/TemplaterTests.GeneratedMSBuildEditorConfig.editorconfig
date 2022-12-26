@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TemplaterTests
-build_property.ProjectDir = D:\Projects\C Sharp Projects\Template_parser\TemplaterTests\
+build_property.ProjectDir = /home/anatoly/Projects/C Sharp/test-template-parser/TemplaterTests/
