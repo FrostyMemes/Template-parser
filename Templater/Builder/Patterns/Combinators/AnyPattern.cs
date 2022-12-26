@@ -7,12 +7,10 @@ public class AnyPattern : Pattern
         Execute = (text, positiоn) =>
         {
             PatternResult? result = null;
-            
+
             foreach (var pattern in patterns)
-            {
                 if ((result = pattern.Execute(text, positiоn)) != null)
                     break;
-            }
 
             return result;
         };

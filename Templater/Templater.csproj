@@ -8,4 +8,8 @@
         <RootNamespace>Templater</RootNamespace>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Folder Include="Builder" />
+    </ItemGroup>
+
 </Project>

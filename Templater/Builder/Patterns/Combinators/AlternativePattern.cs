@@ -4,9 +4,6 @@ public class AlternativePattern : Pattern
 {
     public AlternativePattern(Pattern pattern, PatternResult? alternative)
     {
-        Execute = (text, positiоn) =>
-        {
-            return pattern.Execute(text, positiоn) ?? alternative;
-        };
+        Execute = (text, positiоn) => { return pattern.Execute(text, positiоn) ?? alternative; };
     }
 }

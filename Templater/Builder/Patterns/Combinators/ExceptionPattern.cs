@@ -10,7 +10,7 @@ public class ExceptionPattern : Pattern
             if ((result = pattern.Execute(text, positiоn)) != null
                 && exception.Execute(text, positiоn) == null)
                 return result;
-
+            
             return null;
         };
     }

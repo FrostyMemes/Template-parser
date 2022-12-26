@@ -8,12 +8,12 @@ public class SequencePattern : Pattern
         {
             PatternResult? result = null;
             var currentPosition = positiоn;
-            
+
             foreach (var pattern in patterns)
             {
                 if ((result = pattern.Execute(text, currentPosition)) == null)
                     return null;
-                
+
                 currentPosition = positiоn;
             }
 
