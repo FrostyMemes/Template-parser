@@ -30,6 +30,10 @@ public class TemplatePatterns
     protected static readonly AlternativePattern ptrSingleMarkArea = new (
         new RegexPattern(
             new Regex(@"\'(.*)\'")), nullValue);
+    
+    protected static readonly AlternativePattern ptrDuoMarkArea = new (
+        new RegexPattern(
+            new Regex(@"\""(.*)\""")), nullValue);
 
     protected static readonly AlternativePattern ptrRoundBraceContent = new (
         new RegexPattern(
@@ -51,7 +55,19 @@ public class TemplatePatterns
         new RegexPattern(
             new Regex(@"(?<=\')(.*?)(?=\')")), nullValue);
 
-    protected static readonly AlternativePattern ptrDuoarkContent = new (
+    protected static readonly AlternativePattern ptrDuoMarkContent = new (
         new RegexPattern(
             new Regex(@"(?<=\"")(.*?)(?=\"")")), nullValue);
+    
+    protected static readonly AlternativePattern ptrMarksArea = new (
+        new AnyPattern(ptrSingleMarkArea, ptrDuoMarkArea), nullValue);
+    
+    protected static readonly AlternativePattern ptrMarksContent = new (
+        new AnyPattern(ptrSingleMarkContent, ptrDuoMarkContent), nullValue);
+
+    Dictionary<string, Pattern[]> people = new ()
+    {
+        {"radio", new []{ptrRoundBraceArea, ptrRoundBraceContent}},
+        {"checkbox", new []{ptrSquareBraceArea, ptrSquareBraceContent}}
+    };
 }
