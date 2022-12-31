@@ -17,11 +17,18 @@ public class TemplateParser: TemplatePatterns
 
     public string Parse()
     {
+        string id, tag, type, title, text;
+        
         var literals = _markdown
                 .Split(SPLITER)
                 .Where(literal => !string.IsNullOrWhiteSpace(literal))
                 .Select(literal => literal.Trim())
                 .ToArray();
+
+        foreach (var literal in literals)
+        {
+            
+        }
         
         return _builder.Build();
     }

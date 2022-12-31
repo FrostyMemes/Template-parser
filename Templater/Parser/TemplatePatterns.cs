@@ -8,61 +8,61 @@ public class TemplatePatterns
 {
     static readonly PatternResult nullValue = new (null, -1);
     
-    protected static readonly RegexPattern ptrMarkGroupWords = new (
+    public static readonly RegexPattern ptrMarkGroupWords = new (
         new Regex(@"""([^""\\]*(\\.[^""\\]*)*)""|\'([^\'\\]*(\\.[^\'\\]*)*)\'"));
     
-    protected static readonly AlternativePattern ptrSquareBraceArea = new (
+    public static readonly AlternativePattern ptrSquareBraceArea = new (
         new RegexPattern(
             new Regex(@"\[(.*)\]")), nullValue);
 
-    protected static readonly AlternativePattern ptrRoundBraceArea = new (
+    public static readonly AlternativePattern ptrRoundBraceArea = new (
         new RegexPattern(
             new Regex(@"\((.*)\)")), nullValue);
 
-    protected static readonly AlternativePattern ptrVerticalBraceArea = new (
+    public static readonly AlternativePattern ptrVerticalBraceArea = new (
         new RegexPattern(
             new Regex(@"\|(.*)\|")), nullValue);
 
-    protected static readonly AlternativePattern ptrFigureBraceArea = new (
+    public static readonly AlternativePattern ptrFigureBraceArea = new (
         new RegexPattern(
             new Regex(@"\{(.*)\}")), nullValue);
     
-    protected static readonly AlternativePattern ptrSingleMarkArea = new (
+    public static readonly AlternativePattern ptrSingleMarkArea = new (
         new RegexPattern(
             new Regex(@"\'(.*)\'")), nullValue);
     
-    protected static readonly AlternativePattern ptrDuoMarkArea = new (
+    public static readonly AlternativePattern ptrDuoMarkArea = new (
         new RegexPattern(
             new Regex(@"\""(.*)\""")), nullValue);
 
-    protected static readonly AlternativePattern ptrRoundBraceContent = new (
+    public static readonly AlternativePattern ptrRoundBraceContent = new (
         new RegexPattern(
             new Regex(@"(?<=\()(.*?)(?=\))")), nullValue);
 
-    protected static readonly AlternativePattern ptrSquareBraceContent = new (
+    public static readonly AlternativePattern ptrSquareBraceContent = new (
         new RegexPattern(
             new Regex(@"(?<=\[)(.*?)(?=\])")), nullValue);
 
-    protected static readonly AlternativePattern ptrVerticalBraceContent = new (
+    public static readonly AlternativePattern ptrVerticalBraceContent = new (
         new RegexPattern(
             new Regex(@"(?<=\|)(.*?)(?=\|)")), nullValue);
 
-    protected static readonly AlternativePattern ptrFigureBraceContent = new (
+    public static readonly AlternativePattern ptrFigureBraceContent = new (
         new RegexPattern(
             new Regex(@"(?<=\{)(.*?)(?=\})")), nullValue);
 
-    protected static readonly AlternativePattern ptrSingleMarkContent = new (
+    public static readonly AlternativePattern ptrSingleMarkContent = new (
         new RegexPattern(
             new Regex(@"(?<=\')(.*?)(?=\')")), nullValue);
 
-    protected static readonly AlternativePattern ptrDuoMarkContent = new (
+    public static readonly AlternativePattern ptrDuoMarkContent = new (
         new RegexPattern(
             new Regex(@"(?<=\"")(.*?)(?=\"")")), nullValue);
     
-    protected static readonly AlternativePattern ptrMarksArea = new (
+    public static readonly AlternativePattern ptrMarksArea = new (
         new AnyPattern(ptrSingleMarkArea, ptrDuoMarkArea), nullValue);
     
-    protected static readonly AlternativePattern ptrMarksContent = new (
+    public static readonly AlternativePattern ptrMarksContent = new (
         new AnyPattern(ptrSingleMarkContent, ptrDuoMarkContent), nullValue);
 
     Dictionary<string, Pattern[]> people = new ()
