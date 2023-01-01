@@ -65,7 +65,7 @@ public class TemplatePatterns
     public static readonly AlternativePattern ptrMarksContent = new (
         new AnyPattern(ptrSingleMarkContent, ptrDuoMarkContent), nullValue);
 
-    Dictionary<string, Pattern[]> people = new ()
+    Dictionary<string, Pattern[]> ptrEnumTags = new ()
     {
         {"radio", new []{ptrRoundBraceArea, ptrRoundBraceContent}},
         {"checkbox", new []{ptrSquareBraceArea, ptrSquareBraceContent}}
