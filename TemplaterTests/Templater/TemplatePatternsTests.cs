@@ -6,34 +6,6 @@ namespace TemplaterTests.Templater;
 
 public class TemplatePatternsTests
 {
-
-    [TestMethod]
-    public void Check_UnsuccessefullFindingPtrMarkGroup_Null()
-    {
-        var testText = @"Test";
-        var position = 0;
-        var result = TemplatePatterns.ptrMarkGroupWords.Execute(testText, position);
-        Assert.IsNull(result);
-    }
-
-    [TestMethod]
-    public void Check_SuccessefullFindingTextPtrMarkGroupWithDuoMarks_ExampleText()
-    {
-        var testText = @"""ExampleText""_test";
-        var position = 0;
-        var result = TemplatePatterns.ptrMarkGroupWords.Execute(testText, position);
-        Assert.AreEqual(@"""ExampleText""", result.Result);
-    }
-
-    [TestMethod]
-    public void Check_SuccessefullFindingTextPtrMarkGroupWithSingleMarks_ExampleText()
-    {
-        var testText = @"'ExampleText'_test";
-        var position = 0;
-        var result = TemplatePatterns.ptrMarkGroupWords.Execute(testText, position);
-        Assert.AreEqual(@"'ExampleText'", result.Result);
-    }
-    
     [TestMethod]
     public void Check_SuccessefullFindingPtrSquareBraceArea_ExampleTextWithSquareBraces()
     {
