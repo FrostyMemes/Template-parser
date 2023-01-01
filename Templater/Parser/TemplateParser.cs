@@ -52,7 +52,7 @@ public class TemplateParser: TemplatePatterns
                     temp.Append((String.IsNullOrEmpty(text)) ? "\n": $"{text}\n");
                     _builder
                         .AddTag("div")
-                            .AddAttribute("class", "form-floating mb-3")
+                        .AddAttribute("class", "form-floating mb-3")
                             .AddTag(tag)
                             .AddAttribute("class", "form-control")
                             .AddAttribute("name", literalKey)
