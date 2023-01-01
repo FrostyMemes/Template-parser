@@ -8,8 +8,8 @@ public class TemplatePatterns
 {
     static readonly PatternResult nullValue = new (null, -1);
     
-    public static readonly RegexPattern ptrMarkGroupWords = new (
-        new Regex(@"""([^""\\]*(\\.[^""\\]*)*)""|\'([^\'\\]*(\\.[^\'\\]*)*)\'"));
+    public static readonly Regex ptrMarkGroupWords = new (
+        @"""([^""\\]*(\\.[^""\\]*)*)""|\'([^\'\\]*(\\.[^\'\\]*)*)\'");
     
     public static readonly AlternativePattern ptrSquareBraceArea = new (
         new RegexPattern(
@@ -64,10 +64,11 @@ public class TemplatePatterns
     
     public static readonly AlternativePattern ptrMarksContent = new (
         new AnyPattern(ptrSingleMarkContent, ptrDuoMarkContent), nullValue);
-
-    Dictionary<string, Pattern[]> ptrEnumTags = new ()
+    
+    public static readonly Dictionary<string, Pattern[]> ptrEnumTags = new ()
     {
         {"radio", new []{ptrRoundBraceArea, ptrRoundBraceContent}},
         {"checkbox", new []{ptrSquareBraceArea, ptrSquareBraceContent}}
     };
+    
 }
