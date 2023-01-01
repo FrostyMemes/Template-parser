@@ -42,4 +42,10 @@ public class TemplateBuilder
         }
         return this;
     }
+
+    public TemplateBuilder Clear()
+    {
+        template.Clear();
+        return this;
+    }
 }
