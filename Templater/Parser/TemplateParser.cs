@@ -21,17 +21,17 @@ public class TemplateParser: TemplatePatterns
     public string Parse()
     {
         StringBuilder temp = new ();
-        List<string> keys = new();
+        List<string> keys = new ();
         string id, tag, type, title, text;
         string literalKey, litrealBody;
+        
+        _builder.Clear();
         
         var literals = _markdown
                 .Split(SPLITER)
                 .Where(literal => !string.IsNullOrWhiteSpace(literal))
                 .Select(literal => literal.Trim())
                 .ToArray();
-
-        _builder.Clear();
         
         foreach (var literal in literals)
         {
@@ -59,13 +59,18 @@ public class TemplateParser: TemplatePatterns
                             .AddAttribute("id", literalKey)
                             .AddAttribute("placeholder", title)
                             .AddText((tag == "input")
-                                ? $" value={temp}>"
-                                : $">{temp} </{tag}>")
-                        .AddTag("label")
-                        .AddAttribute("for", literalKey)
-                        .AddText(title)
-                        .AddTag("/label");
+                                ? $" value={temp.ToString()}>"
+                                : $">{temp.ToString()} </{tag}>")
+                            .AddTag("label")
+                            .AddAttribute("for", literalKey)
+                            .AddText(title)
+                            .AddTag("/label")
+                        .AddTag("/div");
                 }
+            }
+            else
+            {
+                
             }
         }
         
