@@ -80,20 +80,20 @@ public class TemplateParser: TemplatePatterns
                 
                 if (!IsNull(ptrVerticalBraceArea.Execute(options[0], 0).Result)) 
                 {
+                    _builder
+                        .AddTag("label")
+                        .AddAttribute("for", literalKey)
+                        .AddAttribute("class", "form-label")
+                        .AddText(title)
+                        .AddTag("/label")
+                        .AddTag("select")
+                        .AddAttribute("name", literalKey)
+                        .AddAttribute("id", literalKey)
+                        .AddAttribute("class", "form-select mb-3")
+                        .AddAttribute("aria-label", literalKey);
+
                     foreach(var option in options)
                     {
-                        _builder
-                            .AddTag("label")
-                            .AddAttribute("for", literalKey)
-                            .AddAttribute("class", "form-label")
-                            .AddText(title)
-                            .AddTag("/label")
-                            .AddTag("select")
-                            .AddAttribute("name", literalKey)
-                            .AddAttribute("id", literalKey)
-                            .AddAttribute("class", "form-select mb-3")
-                            .AddAttribute("aria-label", literalKey);
-
                         if (!IsNull(ptrVerticalBraceArea.Execute(option, 0).Result))
                         {
                             var optionTemplate = ptrVerticalBraceContent.Execute(option, 0);
