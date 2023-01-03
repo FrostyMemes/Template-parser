@@ -28,21 +28,14 @@ public class TemplateBuilder
         template.Insert(pos, $" {name}={value} ");
         return this;
     }
-
-    public TemplateBuilder AddAttributes(ICollection<KeyValuePair<string, string>> attributes)
+    
+    public TemplateBuilder AddAttribute(string value)
     {
         var pos = template.ToString().LastIndexOf('>');
-        var attribute = "";
-
-        foreach (var attr in attributes)
-        {
-            attribute = $" {attr.Key}={attr.Value} ";
-            template.Insert(pos, attribute);
-            pos += attribute.Length;
-        }
+        template.Insert(pos, $" {value} ");
         return this;
     }
-
+    
     public TemplateBuilder Clear()
     {
         template.Clear();
