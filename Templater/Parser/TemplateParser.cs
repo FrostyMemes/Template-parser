@@ -7,8 +7,6 @@ namespace Templater.Builder;
 
 public class TemplateParser: TemplatePatterns
 {
-    private const char LITRAL_SPLITER = ';';
-    
     private readonly string _markdown;
     private readonly TemplateBuilder _builder;
 
@@ -28,7 +26,7 @@ public class TemplateParser: TemplatePatterns
         _builder.Clear();
         
         var literals = _markdown
-                .Split(LITRAL_SPLITER)
+                .Split(';')
                 .Where(literal => !string.IsNullOrWhiteSpace(literal))
                 .Select(literal => literal.Trim())
                 .ToArray();
@@ -57,19 +55,19 @@ public class TemplateParser: TemplatePatterns
                 
                 _builder
                     .AddTag("div")
-                    .AddAttribute("class", "form-floating mb-3")
-                    .AddTag(tag)
-                    .AddAttribute("class", "form-control")
-                    .AddAttribute("name", literalKey)
-                    .AddAttribute("id", literalKey)
-                    .AddAttribute("placeholder", title)
-                    .AddText((tag == "input")
-                        ? $" value={temp}>"
-                        : $">{temp} </{tag}>")
-                    .AddTag("label")
-                    .AddAttribute("for", literalKey)
-                    .AddText(title)
-                    .AddTag("/label")
+                        .AddAttribute("class", "form-floating mb-3")
+                        .AddTag(tag)
+                        .AddAttribute("class", "form-control")
+                        .AddAttribute("name", literalKey)
+                        .AddAttribute("id", literalKey)
+                        .AddAttribute("placeholder", title)
+                        .AddText((tag == "input")
+                            ? $" value={temp}>"
+                            : $">{temp} </{tag}>")
+                        .AddTag("label")
+                        .AddAttribute("for", literalKey)
+                        .AddText(title)
+                        .AddTag("/label")
                     .AddTag("/div");
             }
             else
