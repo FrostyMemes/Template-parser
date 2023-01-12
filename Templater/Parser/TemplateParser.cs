@@ -1,4 +1,3 @@
-using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 
@@ -8,22 +7,24 @@ namespace Templater.Builder;
 public class TemplateParser: TemplatePatterns
 {
     private readonly string _markdown;
-    private readonly TemplateBuilder _builder;
+    private readonly TemplateBuilder builder;
 
-    public TemplateParser(string markdown): base()
+    public TemplateParser(string markdown)
     {
         _markdown = markdown;
-        _builder = new();
+        builder = new();
     }
 
     public string Parse()
     {
-        StringBuilder temp = new ();
+        StringBuilder content = new ();
         List<string> keys = new ();
-        string id, tag, type, title, text;
+        string tag, type, title, text;
         string literalKey, litrealBody;
+        int id;
 
-        _builder.Clear();
+        builder.Clear();
+        builder.AddTag("form");
         
         var literals = _markdown
                 .Split(';')
@@ -33,13 +34,13 @@ public class TemplateParser: TemplatePatterns
         
         foreach (var literal in literals)
         {
-            temp.Clear();
+            content.Clear();
             
             var literalParts = literal.Split(':');
             literalKey = literalParts[0].Trim();
             litrealBody = literalParts[1].Trim();
             
-            temp.Append("\n");
+            content.Append("\n");
             title = literalKey;
             
             if (!IsNull(ptrMarksArea.Execute(litrealBody, 0).Result))
@@ -50,10 +51,10 @@ public class TemplateParser: TemplatePatterns
                 foreach (Match match in markGroup)
                 {
                     text = ptrDuoMarkContent.Execute(match.Value, 0).Result;
-                    temp.Append((String.IsNullOrEmpty(text)) ? "\n": $"{text}\n");
+                    content.Append((String.IsNullOrEmpty(text)) ? "\n": $"{text}\n");
                 }
                 
-                _builder
+                builder
                     .AddTag("div")
                         .AddAttribute("class", "form-floating mb-3")
                         .AddTag(tag)
@@ -62,8 +63,8 @@ public class TemplateParser: TemplatePatterns
                         .AddAttribute("id", literalKey)
                         .AddAttribute("placeholder", title)
                         .AddText((tag == "input")
-                            ? $" value={temp}>"
-                            : $">{temp} </{tag}>")
+                            ? $" value={content}>"
+                            : $">{content} </{tag}>")
                         .AddTag("label")
                         .AddAttribute("for", literalKey)
                         .AddText(title)
@@ -80,7 +81,7 @@ public class TemplateParser: TemplatePatterns
                 
                 if (!IsNull(ptrVerticalBraceArea.Execute(options[0], 0).Result)) 
                 {
-                    _builder
+                    builder
                         .AddTag("label")
                         .AddAttribute("for", literalKey)
                         .AddAttribute("class", "form-label")
@@ -97,8 +98,8 @@ public class TemplateParser: TemplatePatterns
                         if (!IsNull(ptrVerticalBraceArea.Execute(option, 0).Result))
                         {
                             var optionTemplate = ptrVerticalBraceContent.Execute(option, 0);
-                            var selected = (option[optionTemplate.EndPosition + 2] == '*' ? "selected" : "");
-                            _builder
+                            var selected = (option[optionTemplate.EndPosition + 2] == '*' ? "selected" : string.Empty);
+                            builder
                                 .AddTag("option")
                                 .AddAttribute("value", optionTemplate.Result)
                                 .AddAttribute(selected)
@@ -106,23 +107,64 @@ public class TemplateParser: TemplatePatterns
                                 .AddTag("/option");
                         }
 
-                        _builder.AddTag("/select");
+                        builder.AddTag("/select");
+                    }
+                }
+                else
+                {
+                    id = 1;
+                    type = (IsNull(ptrRoundBraceArea.Execute(options[0], 0).Result))  
+                        ? "checkbox" 
+                        : "radio";
+                    
+                    foreach(var option in options)
+                    {
+                        if (!IsNull(ptrEnumTags[type][0].Execute(option, 0).Result))
+                        {
+                            var temp = ptrEnumTags[type][1].Execute(option, 0);
+                            
+                            var check = IsNull(temp.Result) 
+                                ? string.Empty 
+                                : "checked";
+                            
+                            var optionLabel = option
+                                .Substring(temp.EndPosition + 2)
+                                .Trim();
+                            
+                            builder
+                                .AddTag("div")
+                                .AddAttribute("class", "form-check")
+                                    .AddTag("input")
+                                    .AddAttribute("class", "form-check-input")
+                                    .AddAttribute("type", type)
+                                    .AddAttribute("id", $"{id}")
+                                    .AddAttribute("name", literalKey)
+                                    .AddAttribute(check)
+                                    .AddTag("/input")
+                                    .AddTag("label")
+                                    .AddAttribute("class", "form-check-label")
+                                    .AddAttribute("for", $"{id}")
+                                    .AddText(optionLabel)
+                                    .AddTag("/label")
+                                .AddTag("/div");
+                        }
                     }
                 }
             }
         }
-        
-        return _builder.Build();
-    }
 
-    public string GetMarkdown()
-    {
-        return _markdown;
+        builder.AddTag("/form");
+        return builder.Build();
     }
     
     private bool IsNull(object? value)
     {
         return value == null;
+    }
+    
+    public string GetMarkdown()
+    {
+        return _markdown;
     }
 
 }
