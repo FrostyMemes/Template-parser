@@ -7,6 +7,7 @@ public class ExceptionPattern : Pattern
         Execute = (text, positiоn) =>
         {
             PatternResult? result = null;
+            
             if ((result = pattern.Execute(text, positiоn)) != null
                 && exception.Execute(text, positiоn) == null)
                 return result;
