@@ -1,86 +1,39 @@
 {
   "format": 1,
   "restore": {
-    "/home/anatoly/Projects/C Sharp/test-template-parser/TemplaterTests/TemplaterTests.csproj": {}
+    "D:\\Projects\\C Sharp Projects\\Template_parser\\TemplaterTests\\TemplaterTests.csproj": {}
   },
   "projects": {
-    "/home/anatoly/Projects/C Sharp/test-template-parser/Templater/Templater.csproj": {
+    "D:\\Projects\\C Sharp Projects\\Template_parser\\TemplaterTests\\TemplaterTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/anatoly/Projects/C Sharp/test-template-parser/Templater/Templater.csproj",
-        "projectName": "Templater",
-        "projectPath": "/home/anatoly/Projects/C Sharp/test-template-parser/Templater/Templater.csproj",
-        "packagesPath": "/home/anatoly/.nuget/packages/",
-        "outputPath": "/home/anatoly/Projects/C Sharp/test-template-parser/Templater/obj/",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "/home/anatoly/.nuget/NuGet/NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "net7.0"
-        ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/home/anatoly/.dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "/home/anatoly/Projects/C Sharp/test-template-parser/TemplaterTests/TemplaterTests.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "/home/anatoly/Projects/C Sharp/test-template-parser/TemplaterTests/TemplaterTests.csproj",
+        "projectUniqueName": "D:\\Projects\\C Sharp Projects\\Template_parser\\TemplaterTests\\TemplaterTests.csproj",
         "projectName": "TemplaterTests",
-        "projectPath": "/home/anatoly/Projects/C Sharp/test-template-parser/TemplaterTests/TemplaterTests.csproj",
-        "packagesPath": "/home/anatoly/.nuget/packages/",
-        "outputPath": "/home/anatoly/Projects/C Sharp/test-template-parser/TemplaterTests/obj/",
+        "projectPath": "D:\\Projects\\C Sharp Projects\\Template_parser\\TemplaterTests\\TemplaterTests.csproj",
+        "packagesPath": "C:\\Users\\anato\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\C Sharp Projects\\Template_parser\\TemplaterTests\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/anatoly/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\anato\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/home/anatoly/Projects/C Sharp/test-template-parser/Templater/Templater.csproj": {
-                "projectPath": "/home/anatoly/Projects/C Sharp/test-template-parser/Templater/Templater.csproj"
+              "D:\\Projects\\C Sharp Projects\\Template_parser\\Templater\\Templater.csproj": {
+                "projectPath": "D:\\Projects\\C Sharp Projects\\Template_parser\\Templater\\Templater.csproj"
               }
             }
           }
@@ -128,7 +81,66 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/anatoly/.dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Projects\\C Sharp Projects\\Template_parser\\Templater\\Templater.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\C Sharp Projects\\Template_parser\\Templater\\Templater.csproj",
+        "projectName": "Templater",
+        "projectPath": "D:\\Projects\\C Sharp Projects\\Template_parser\\Templater\\Templater.csproj",
+        "packagesPath": "C:\\Users\\anato\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\C Sharp Projects\\Template_parser\\Templater\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\anato\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mghpYKWjcF2i60r9rG8wT6wo9Bur05KUdSMnCViPOl4xKjd1nK0c2x8f7JA1ksAh8j2QkwhT/Is6NqFTM+74oA==",
+  "dgSpecHash": "Anwh+c81BZjCCbxWFMOErv46SIvpnHTJv3pqTuML8CbZCrF6UApazMCePf0mILIMtsKWAt3Xi2K4vNOTw9orDA==",
   "success": true,
-  "projectFilePath": "/home/anatoly/Projects/C Sharp/test-template-parser/Templater/Templater.csproj",
+  "projectFilePath": "D:\\Projects\\C Sharp Projects\\Template_parser\\Templater\\Templater.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
