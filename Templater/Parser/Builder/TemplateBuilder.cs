@@ -25,14 +25,14 @@ public class TemplateBuilder
     public TemplateBuilder AddAttribute(string name, string value)
     {
         var pos = template.ToString().LastIndexOf('>');
-        template.Insert(pos, $" {name}={value} ");
+        template.Insert(pos, $" {name}={value}");
         return this;
     }
     
     public TemplateBuilder AddAttribute(string value)
     {
         var pos = template.ToString().LastIndexOf('>');
-        template.Insert(pos, $" {value} ");
+        template.Insert(pos, $" {value}");
         return this;
     }
     
