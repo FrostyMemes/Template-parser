@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Jr2YexYWJ5Xd/q6JFC7sJqMJE5IDuy1T5pPLHUWIPcEBHrV7j5Rjzh8dv6PR6eaJUNbe0iEqKBdAsI5bWXdllA==",
+  "dgSpecHash": "UKgzpqReZwJkxi/Qd7e9KTmR/BZ2xwBqPiA2a6OqW2CU6CZS0BvN5J8Awf4cfq8+8FPUfxRC0tDPNZ8KUfY0Hw==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\C Sharp Projects\\Template_parser\\TemplaterTests\\TemplaterTests.csproj",
+  "projectFilePath": "D:\\Projects\\C Sharp Projects\\TemplateParser Test\\test-template-markdown-parser\\TemplaterTests\\TemplaterTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\anato\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\anato\\.nuget\\packages\\microsoft.codecoverage\\17.3.2\\microsoft.codecoverage.17.3.2.nupkg.sha512",
