@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JIeS8FlKHWszI4Q6wosvkM2Oq8YPUY5vsLjIyaADul+pZVKJ20Idj4B6W62Ke5jkLMQ4D3b89zsZpydD/0Wfjw==",
+  "dgSpecHash": "18CNnrLiRalQCLqMBBsdtY9lEE3qGh4BnAxEdB9SnM+sGIszmBqzqpZY2ikg343DvfXKXwWtYk3JvwXF/gamlQ==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\C Sharp Projects\\TemplateParser Test\\test-template-markdown-parser\\Templater\\Templater.csproj",
+  "projectFilePath": "D:\\Projects\\C Sharp Projects\\text-parser-tools\\Templater\\Templater.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\C Sharp Projects\\TemplateParser Test\\test-template-markdown-parser\\Templater\\Templater.csproj",
+      "projectUniqueName": "D:\\Projects\\C Sharp Projects\\text-parser-tools\\Templater\\Templater.csproj",
       "projectName": "Templater",
-      "projectPath": "D:\\Projects\\C Sharp Projects\\TemplateParser Test\\test-template-markdown-parser\\Templater\\Templater.csproj",
+      "projectPath": "D:\\Projects\\C Sharp Projects\\text-parser-tools\\Templater\\Templater.csproj",
       "packagesPath": "C:\\Users\\anato\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\C Sharp Projects\\TemplateParser Test\\test-template-markdown-parser\\Templater\\obj\\",
+      "outputPath": "D:\\Projects\\C Sharp Projects\\text-parser-tools\\Templater\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

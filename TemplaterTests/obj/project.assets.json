@@ -6794,11 +6794,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\C Sharp Projects\\TemplateParser Test\\test-template-markdown-parser\\TemplaterTests\\TemplaterTests.csproj",
+      "projectUniqueName": "D:\\Projects\\C Sharp Projects\\text-parser-tools\\TemplaterTests\\TemplaterTests.csproj",
       "projectName": "TemplaterTests",
-      "projectPath": "D:\\Projects\\C Sharp Projects\\TemplateParser Test\\test-template-markdown-parser\\TemplaterTests\\TemplaterTests.csproj",
+      "projectPath": "D:\\Projects\\C Sharp Projects\\text-parser-tools\\TemplaterTests\\TemplaterTests.csproj",
       "packagesPath": "C:\\Users\\anato\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\C Sharp Projects\\TemplateParser Test\\test-template-markdown-parser\\TemplaterTests\\obj\\",
+      "outputPath": "D:\\Projects\\C Sharp Projects\\text-parser-tools\\TemplaterTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -6819,8 +6819,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\Projects\\C Sharp Projects\\TemplateParser Test\\test-template-markdown-parser\\Templater\\Templater.csproj": {
-              "projectPath": "D:\\Projects\\C Sharp Projects\\TemplateParser Test\\test-template-markdown-parser\\Templater\\Templater.csproj"
+            "D:\\Projects\\C Sharp Projects\\text-parser-tools\\Templater\\Templater.csproj": {
+              "projectPath": "D:\\Projects\\C Sharp Projects\\text-parser-tools\\Templater\\Templater.csproj"
             }
           }
         }
