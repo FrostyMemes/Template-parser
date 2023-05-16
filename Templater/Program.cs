@@ -1,4 +1,11 @@
-﻿using Templater.Builder;
+﻿using System.Text.RegularExpressions;
+using Templater.Patterns;
+using Templater.Patterns.Combinators;
 
-var mParser = new TemplateParser();
-Console.Write(mParser.Parse(@"test (2312): '1', '2';"));
+PatternResult alt = new PatternResult(null, -1);
+
+RegexPattern pattern = new RegexPattern(new Regex(@"\[(.*)\]"));
+
+var a = pattern.Execute("", 1);
+
+Console.Write("");

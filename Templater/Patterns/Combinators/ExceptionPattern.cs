@@ -2,7 +2,7 @@ namespace Templater.Patterns.Combinators;
 
 public class ExceptionPattern : Pattern
 {
-    public ExceptionPattern(Pattern pattern, Pattern exception)
+    public ExceptionPattern(Pattern pattern, Pattern exception) 
     {
         Execute = (text, positiоn) =>
         {

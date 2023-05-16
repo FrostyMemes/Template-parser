@@ -58,3 +58,18 @@ D:\Projects\C Sharp Projects\TemplateParser Test\test-template-markdown-parser\T
 D:\Projects\C Sharp Projects\TemplateParser Test\test-template-markdown-parser\Templater\obj\Debug\net7.0\Templater.pdb
 D:\Projects\C Sharp Projects\TemplateParser Test\test-template-markdown-parser\Templater\obj\Debug\net7.0\Templater.genruntimeconfig.cache
 D:\Projects\C Sharp Projects\TemplateParser Test\test-template-markdown-parser\Templater\obj\Debug\net7.0\ref\Templater.dll
+D:\Projects\C Sharp Projects\text-parser-tools\Templater\obj\Debug\net7.0\Templater.csproj.AssemblyReference.cache
+D:\Projects\C Sharp Projects\text-parser-tools\Templater\obj\Debug\net7.0\Templater.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\C Sharp Projects\text-parser-tools\Templater\obj\Debug\net7.0\Templater.AssemblyInfoInputs.cache
+D:\Projects\C Sharp Projects\text-parser-tools\Templater\obj\Debug\net7.0\Templater.AssemblyInfo.cs
+D:\Projects\C Sharp Projects\text-parser-tools\Templater\obj\Debug\net7.0\Templater.csproj.CoreCompileInputs.cache
+D:\Projects\C Sharp Projects\text-parser-tools\Templater\obj\Debug\net7.0\Templater.dll
+D:\Projects\C Sharp Projects\text-parser-tools\Templater\obj\Debug\net7.0\refint\Templater.dll
+D:\Projects\C Sharp Projects\text-parser-tools\Templater\obj\Debug\net7.0\Templater.pdb
+D:\Projects\C Sharp Projects\text-parser-tools\Templater\bin\Debug\net7.0\Templater.exe
+D:\Projects\C Sharp Projects\text-parser-tools\Templater\bin\Debug\net7.0\Templater.deps.json
+D:\Projects\C Sharp Projects\text-parser-tools\Templater\bin\Debug\net7.0\Templater.runtimeconfig.json
+D:\Projects\C Sharp Projects\text-parser-tools\Templater\bin\Debug\net7.0\Templater.dll
+D:\Projects\C Sharp Projects\text-parser-tools\Templater\bin\Debug\net7.0\Templater.pdb
+D:\Projects\C Sharp Projects\text-parser-tools\Templater\obj\Debug\net7.0\Templater.genruntimeconfig.cache
+D:\Projects\C Sharp Projects\text-parser-tools\Templater\obj\Debug\net7.0\ref\Templater.dll
